@@ -1,3 +1,6 @@
+.color {
+  color: #fcba03;
+}
 .body {
   top: 0px;
   left: 0px;
@@ -22,7 +25,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: baseline;
-  align-content: space-around;
+  align-content: flex-start;
 }
 .item {
   flex: 0 1 auto;
