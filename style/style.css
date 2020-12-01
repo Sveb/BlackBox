@@ -21,7 +21,9 @@
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: base-line;
+  font-family: myfont;
 }
+
 .background-html {
   background-color: rgb(0, 0, 0);
 }
@@ -43,16 +45,12 @@
   align-self: flex-start;
   color: #fcba03;
 }
-a .hover-img {
-  position: relative;
+.a_bit_left {
+  margin-left: -190px;
 }
-a .hover-img span {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  z-index: 9999;
+.a_bit_right {
+  margin-right: -145px;
 }
-a:hover .hover-img span {
-  top: 20px;
-  left: 0;
+.a_bit_more_right {
+  margin-right: -230px;
 }
