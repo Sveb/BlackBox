@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html class="background-html" lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/style.css" />
     <meta charset="utf-8" />
     <title>blackbox</title>
+
+    <script>
+      function logHello(name) {
+        console.log(name);
+      }
+    </script>
   </head>
   <body class="body">
     <header class="header">
@@ -17,9 +24,11 @@
       <img class="hamburger" src="images/icon-menu.svg" alt="menu-icon" />
     </header>
     <main>
-      <div class="container">
+      <div class="columns">
         <div class="column">
-          <div class="item"><p>Aaron Tompkins</p></div>
+          <div onclick="logHello('Aaron')" class="item">
+            <p>Aaron Tompkins</p>
+          </div>
           <div class="item"><p>Adam Peertofsky</p></div>
           <div class="item"><p>Akiko Iwakawa Grieve</p></div>
           <div class="item"><p>Angus Wall</p></div>

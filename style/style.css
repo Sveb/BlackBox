@@ -1,12 +1,8 @@
-@font-face {
-  font-family: myfont;
-  src: url("fonts/lotagrotesquealt1-regular-webfont.woff");
-}
 /* global */
 .body {
   background-color: #000000;
   opacity: 1;
-  font-family: myfont;
+  font-family: "lota";
   font-size: 30px;
   margin: 0;
   color: #fcba03;
@@ -26,6 +22,7 @@
 }
 .breadcrumb {
   display: none;
+  font-weight: 400;
 }
 .logo-rps {
   display: none;
@@ -33,24 +30,34 @@
 .hamburger {
   display: none;
 }
-.background-html {
-  background-color: rgb(0, 0, 0);
+
+/* list of editors */
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+  padding: 0 30px;
 }
 .column {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding: 0 10px;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-  align-content: flex-start;
-}
-.item {
-  flex: 0 1 auto;
-  align-self: flex-start;
-  color: #fcba03;
+
+/* brakepoints */
+@media (max-width: 750px) {
+  .columns {
+    display: block;
+    text-align: center;
+  }
+  .column {
+    display: block;
+  }
 }
