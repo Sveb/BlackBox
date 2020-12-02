@@ -2,28 +2,37 @@
   font-family: myfont;
   src: url("fonts/lotagrotesquealt1-regular-webfont.woff");
 }
-.color {
-  color: #fcba03;
-}
+/* global */
 .body {
-  top: 0px;
-  left: 0px;
-  width: 1280px;
-  height: 800px;
-  background: #000000 0% 0% no-repeat padding-box;
+  background-color: #000000;
   opacity: 1;
   font-family: myfont;
   font-size: 30px;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: base-line;
-  font-family: myfont;
+  margin: 0;
+  color: #fcba03;
 }
 
+/* header */
+.header {
+  position: relative;
+  height: 100px;
+  background-color: red;
+}
+.logo-makemake {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+.breadcrumb {
+  display: none;
+}
+.logo-rps {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
 .background-html {
   background-color: rgb(0, 0, 0);
 }
@@ -44,13 +53,4 @@
   flex: 0 1 auto;
   align-self: flex-start;
   color: #fcba03;
-}
-.a_bit_left {
-  margin-left: -190px;
-}
-.a_bit_right {
-  margin-right: -145px;
-}
-.a_bit_more_right {
-  margin-right: -230px;
 }
